@@ -36,18 +36,18 @@ public class Humain {
 	public void acheter(String bien, int prix) {
 		if (argent >= prix) {
 			argent -= prix;
-			parler(" J'ai "+ argent +" sous en poche. Je vais pouvoir m'offrir " + bien +" à " + prix +" sous.");
+			parler(" J'ai "+ argent +" sous en poche. Je vais pouvoir m'offrir " + bien +" ï¿½ " + prix +" sous.");
 		}
 		else {
-			parler("Je n'ai plus que " + argent + " sous en poche. Je ne peux même pas m'offrir " + bien + " à " + prix + " sous.");
+			parler("Je n'ai plus que " + argent + " sous en poche. Je ne peux mï¿½me pas m'offrir " + bien + " ï¿½ " + prix + " sous.");
 		}
 	}
 	
-	public void gagnerArgent(int quantité) {
-		argent += quantité;
+	public void gagnerArgent(int quantite) {
+		argent += quantite;
 	}
 	
-	public void perdreArgent(int quantité) {
-		argent -= quantité;
+	public void perdreArgent(int quantite) {
+		argent -= quantite;
 	}
 }
