@@ -1,5 +1,7 @@
 package personnages;
 
+import histoire.Traitre;
+
 public class Commercant extends Humain{
 	private static final String boissonFavorite = "thé";
 	
@@ -17,5 +19,9 @@ public class Commercant extends Humain{
 	public void recevoir(int argent) {
 		gagnerArgent(argent);
 		parler(argent + " sous ! Je te remercie généreux donnateur !");
+	}
+	
+	public void seFaireRanconner(Traitre traitre) {
+		parler(" Tout de suite grand " + traitre.getNom() + ".");
 	}
 }
